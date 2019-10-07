@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Roboto&display=swap');
+
+// font-family: 'Quattrocento', serif;
+// font-family: 'Roboto', sans-serif;
+
+$font-quattrocento: 'Quattrocento', serif;
+
+$color-white: #FFFFFF;
+$color-grey-100: #F5F5F5;
+$color-blue-grey-50: #ECEFF1;
+$color-blue-grey-500: #607D8B;
+$color-blue-grey-900: #263238;
+$color-lime-600: #C0CA33;
+$color-lime-800: #9E9D24;
+
+$s: 8px;
+
+.fw-bold {
+    font-weight: bold;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: $color-blue-grey-900;
+}
+
+.cover {
+    text-align: center;
+    background-color: $color-blue-grey-50;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    
+    @media (min-width: 768px) {
+        height: calc(100vh - 295px);
+    }
+
+    &-wrapper {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    
+    &-title {
+        font-size: 60px;
+
+        @media (min-width: 768px) {
+            font-size: 144px;
+        }
+
+        .ct-first {
+            font-family: $font-quattrocento;
+            font-weight: bold;
+        }
+
+        .ct-last {
+            color: $color-lime-800;
+            text-transform: uppercase;
+        }
+    }
+
+    &-subtitle {
+        font-family: $font-quattrocento;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $color-blue-grey-500;
+
+        @media (max-width: 767px) {
+            font-size: 25px;
+            max-width: 320px;
+            display: inline-block;
+        }
+    }
+
+    &-info {
+        font-size: 36px;
+        margin-top: $s*12;
+    }
+}
+
+.section-dark {
+    color: $color-white;
+    text-align: center;
+    background-color: $color-blue-grey-900;
+    padding: $s*4 $s*2;
+
+    @media (min-width: 768px) {
+        padding: $s*8 $s*6;
+    }
+
+    .sd-title {
+        font-family: $font-quattrocento;
+        font-size: 30px;
+        font-weight: bold;
+        color: $color-lime-600;
+        text-transform: uppercase;
+        margin-bottom: $s*6;
+    }
+
+    .sd-content {
+        text-align: left;
+        line-height: 19px;
+        max-width: 700px;
+        display: inline-block;
+        margin-bottom: $s*2;
+    }
+}
