@@ -12,7 +12,7 @@ body {
 
 .cover {
   text-align: center;
-  background-color: #ECEFF1;
+  background-color: #FFF;
   width: 100%;
   height: 100vh;
   display: table;
@@ -39,17 +39,18 @@ body {
   }
 }
 
-.cover-title .ct-first {
-  font-family: "Quattrocento", serif;
-  font-weight: bold;
+.cover-logo {
+  margin-bottom: 32px;
+  width: 288px;
 }
 
-.cover-title .ct-last {
-  color: #9E9D24;
-  text-transform: uppercase;
+@media (min-width: 768px) {
+  .cover-logo {
+    width: 664px;
+  }
 }
 
-.cover-subtitle {
+.cover-title {
   font-family: "Quattrocento", serif;
   font-size: 30px;
   text-transform: uppercase;
@@ -86,7 +87,7 @@ body {
   font-family: "Quattrocento", serif;
   font-size: 30px;
   font-weight: bold;
-  color: #C0CA33;
+  color: #81C784;
   text-transform: uppercase;
   margin-bottom: 48px;
 }
