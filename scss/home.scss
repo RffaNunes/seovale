@@ -1,18 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Quattrocento|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat|Roboto&display=swap');
 
-// font-family: 'Quattrocento', serif;
-// font-family: 'Roboto', sans-serif;
-
-$font-quattrocento: 'Quattrocento', serif;
+$font-caveat: 'Caveat', cursive;
 $font-roboto: 'Roboto', sans-serif;
 
 $color-white: #FFFFFF;
-$color-grey-100: #F5F5F5;
-$color-blue-grey-50: #ECEFF1;
-$color-blue-grey-500: #607D8B;
-$color-blue-grey-900: #263238;
-$color-lime-600: #C0CA33;
-$color-lime-800: #9E9D24;
+$color-lime-700: #AFB42B;
 
 $s: 8px;
 
@@ -24,86 +16,50 @@ html,
 body {
     font-family: $font-roboto;
     font-size: 16px;
-    color: $color-blue-grey-900;
+    color: $color-white;
+    line-height: normal;
+    background-image: url(/img/parque-tecnologico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+main {
+    display: table;
+    width: 100%;
 }
 
 .cover {
     text-align: center;
-    background-color: $color-blue-grey-50;
-    width: 100%;
+    vertical-align: middle;
     height: 100vh;
-    display: table;
-    
-    @media (min-width: 768px) {
-        height: calc(100vh - 295px);
+    display: table-cell;
+
+    &-logo {
+        width: 300px;
     }
 
-    &-wrapper {
-        vertical-align: middle;
-        display: table-cell;
-    }
-    
     &-title {
-        font-size: 60px;
+        font-family: $font-caveat;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: -8px;
 
-        @media (min-width: 768px) {
-            font-size: 144px;
-        }
-
-        .ct-first {
-            font-family: $font-quattrocento;
-            font-weight: bold;
-        }
-
-        .ct-last {
-            color: $color-lime-800;
-            text-transform: uppercase;
+        b {
+            color: $color-lime-700;
         }
     }
 
     &-subtitle {
-        font-family: $font-quattrocento;
-        font-size: 30px;
-        text-transform: uppercase;
-        color: $color-blue-grey-500;
-
-        @media (max-width: 767px) {
-            font-size: 25px;
-            max-width: 320px;
-            display: inline-block;
-        }
+        font-family: $font-caveat;
+        font-size: 28px;
+        margin: $s*5 0;
     }
 
-    &-info {
-        font-size: 36px;
-        margin-top: $s*12;
-    }
-}
-
-.section-dark {
-    color: $color-white;
-    text-align: center;
-    background-color: $color-blue-grey-900;
-    padding: $s*4 $s*2;
-
-    @media (min-width: 768px) {
-        padding: $s*8 $s*6;
-    }
-
-    .sd-title {
-        font-family: $font-quattrocento;
-        font-size: 30px;
-        font-weight: bold;
-        color: $color-lime-600;
-        text-transform: uppercase;
-        margin-bottom: $s*6;
-    }
-
-    .sd-content {
-        text-align: left;
-        line-height: 19px;
-        max-width: 700px;
+    &-text {
+        max-width: 320px;
         display: inline-block;
-        margin-bottom: $s*2;
+        margin: $s 0;
     }
 }
