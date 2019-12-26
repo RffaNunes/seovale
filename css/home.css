@@ -46,11 +46,23 @@ main {
 .cover-subtitle {
   font-family: "Caveat", cursive;
   font-size: 28px;
-  margin: 40px 0;
+  margin: 40px 0 56px;
 }
 
 .cover-text {
   max-width: 320px;
   display: inline-block;
   margin: 8px 0;
+}
+
+.cover-social {
+  margin: 24px 0;
+}
+
+.cover-social-link:not(:first-child) {
+  margin-left: 24px;
+}
+
+.cover-social-link-icon {
+  height: 40px;
 }

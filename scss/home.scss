@@ -54,12 +54,26 @@ main {
     &-subtitle {
         font-family: $font-caveat;
         font-size: 28px;
-        margin: $s*5 0;
+        margin: $s*5 0 $s*7;
     }
 
     &-text {
         max-width: 320px;
         display: inline-block;
         margin: $s 0;
+    }
+
+    &-social {
+        margin: $s*3 0;
+
+        &-link {
+            &:not(:first-child) {
+                margin-left: $s*3;
+            }
+
+            &-icon {
+                height: 40px;
+            }
+        }
     }
 }
