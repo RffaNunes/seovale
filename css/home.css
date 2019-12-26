@@ -32,21 +32,41 @@ main {
   width: 300px;
 }
 
+@media (min-width: 768px) {
+  .cover-logo {
+    width: 500px;
+  }
+}
+
 .cover-title {
   font-family: "Caveat", cursive;
   font-size: 22px;
   font-weight: bold;
-  margin-top: -8px;
+  margin-top: -12px;
 }
 
 .cover-title b {
   color: #AFB42B;
 }
 
+@media (min-width: 768px) {
+  .cover-title {
+    font-size: 36px;
+    margin-top: -24px;
+  }
+}
+
 .cover-subtitle {
   font-family: "Caveat", cursive;
   font-size: 28px;
-  margin: 40px 0 56px;
+  margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .cover-subtitle {
+    font-size: 47px;
+    margin: 64px 0;
+  }
 }
 
 .cover-text {
@@ -55,8 +75,21 @@ main {
   margin: 8px 0;
 }
 
+@media (min-width: 768px) {
+  .cover-text {
+    font-size: 26px;
+    max-width: 520px;
+  }
+}
+
 .cover-social {
   margin: 24px 0;
+}
+
+@media (min-width: 768px) {
+  .cover-social {
+    margin: 40px 0;
+  }
 }
 
 .cover-social-link {
@@ -67,6 +100,18 @@ main {
   margin-left: 24px;
 }
 
+@media (min-width: 768px) {
+  .cover-social-link:not(:first-child) {
+    margin-left: 56px;
+  }
+}
+
 .cover-social-link-icon {
   height: 40px;
+}
+
+@media (min-width: 768px) {
+  .cover-social-link-icon {
+    height: 56px;
+  }
 }

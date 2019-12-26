@@ -38,43 +38,74 @@ main {
 
     &-logo {
         width: 300px;
+
+        @media (min-width: 768px) {
+            width: 500px;
+        }
     }
 
     &-title {
         font-family: $font-caveat;
         font-size: 22px;
         font-weight: bold;
-        margin-top: -8px;
+        margin-top: -12px;
 
         b {
             color: $color-lime-700;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 36px;
+            margin-top: -24px;
         }
     }
 
     &-subtitle {
         font-family: $font-caveat;
         font-size: 28px;
-        margin: $s*5 0 $s*7;
+        margin: $s*5 0;
+
+        @media (min-width: 768px) {
+            font-size: 47px;
+            margin: $s*8 0;
+        }
     }
 
     &-text {
-        max-width: 320px;
+        max-width: $s*40;
         display: inline-block;
         margin: $s 0;
+
+        @media (min-width: 768px) {
+            font-size: 26px;
+            max-width: $s*65;
+        }
     }
 
     &-social {
         margin: $s*3 0;
+
+        @media (min-width: 768px) {
+            margin: $s*5 0;
+        }
 
         &-link {
             text-decoration: none;
 
             &:not(:first-child) {
                 margin-left: $s*3;
+
+                @media (min-width: 768px) {
+                    margin-left: $s*7;
+                }
             }
 
             &-icon {
-                height: 40px;
+                height: $s*5;
+
+                @media (min-width: 768px) {
+                    height: $s*7;
+                }
             }
         }
     }
