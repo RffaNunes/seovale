@@ -59,6 +59,10 @@ main {
   margin: 24px 0;
 }
 
+.cover-social-link {
+  text-decoration: none;
+}
+
 .cover-social-link:not(:first-child) {
   margin-left: 24px;
 }

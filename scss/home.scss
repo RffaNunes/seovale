@@ -67,6 +67,8 @@ main {
         margin: $s*3 0;
 
         &-link {
+            text-decoration: none;
+
             &:not(:first-child) {
                 margin-left: $s*3;
             }
